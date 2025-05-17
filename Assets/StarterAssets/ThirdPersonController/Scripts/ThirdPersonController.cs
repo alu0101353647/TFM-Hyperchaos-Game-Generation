@@ -300,17 +300,17 @@ namespace StarterAssets
                 }
 
                 // Jump
-                if (_input.jump && _jumpTimeoutDelta <= 0.0f)
-                {
-                    // the square root of H * -2 * G = how much velocity needed to reach desired height
-                    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
+                //if (_input.jump && _jumpTimeoutDelta <= 0.0f)
+                //{
+                //    // the square root of H * -2 * G = how much velocity needed to reach desired height
+                //    _verticalVelocity = Mathf.Sqrt(JumpHeight * -2f * Gravity);
 
-                    // update animator if using character
-                    if (_hasAnimator)
-                    {
-                        _animator.SetBool(_animIDJump, true);
-                    }
-                }
+                //    // update animator if using character
+                //    if (_hasAnimator)
+                //    {
+                //        _animator.SetBool(_animIDJump, true);
+                //    }
+                //}
 
                 // jump timeout
                 if (_jumpTimeoutDelta >= 0.0f)

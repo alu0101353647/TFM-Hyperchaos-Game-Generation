@@ -5,7 +5,7 @@ public class FlyingTrap : MonoBehaviour
     public bool flying = false;
     public Transform parentOfPath; // give it the spawner that spawned the path, it'll follow its children
     private int count = 0;
-    private float distance = 0.7f;
+    private float distance = 1f;
     [SerializeField] float speed = 40f;
     void Update()
     {
